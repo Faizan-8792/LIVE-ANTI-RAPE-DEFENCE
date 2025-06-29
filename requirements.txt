@@ -1,5 +1,1 @@
-Flask
-geocoder
-python-dotenv
-pygame
-speechrecognition
+pip freeze > requirements.txt
