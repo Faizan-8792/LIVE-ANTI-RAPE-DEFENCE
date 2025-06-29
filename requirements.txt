@@ -1,0 +1,5 @@
+Flask
+geocoder
+python-dotenv
+pygame
+speechrecognition

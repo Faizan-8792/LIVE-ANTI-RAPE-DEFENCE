@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anti-Rape Project Launcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 1.8rem;
+    }
+
+    .btn {
+      display: block;
+      margin: 12px auto;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      width: 100%;
+      max-width: 300px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #388e3c;
+    }
+
+    .btn.linkedin { background: #0077b5; }
+    .btn.github   { background: #333; }
+    .btn.insta    { background: #e1306c; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 Anti-Rape Project Access</h1>
+    <a href="{{ url_for('defence') }}" class="btn">🛡️ Start Anti-Rape Defense</a>
+    <a href="http://www.linkedin.com/in/saifullah-faizan-0500052bb" target="_blank" class="btn linkedin">🔗 LinkedIn</a>
+    <a href="https://github.com/Faizan-8792" target="_blank" class="btn github">🧠 GitHub</a>
+    <a href="https://www.instagram.com/faizan.exeeeee" target="_blank" class="btn insta">📷 Instagram</a>
+  </div>
+</body>
+</html>
